@@ -1,5 +1,4 @@
 new file created in master branch
 modified a file in master branch
-stashing a modified files into a temp folder
 adding conflicts in a feature branch
 
