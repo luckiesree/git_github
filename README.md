@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 JavaParser and Maven sample
 ---
 
@@ -18,3 +19,7 @@ How you run this code is up to you, but usually you would start by using an IDE 
 The Maven dependencies may lag behind the official releases a bit.
 
 If you notice some problems with this setup, please open an issue.
+=======
+# git_github
+This is for tutorials purpose.
+>>>>>>> 8a44ff2d2c4a587d82c7740c6492910f7bade46d
