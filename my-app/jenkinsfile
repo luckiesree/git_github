@@ -1,6 +1,7 @@
 node {
   stage('SCM checkout'){
-    git https://github.com/luckiesree/git_github.git}
+    git "https://github.com/luckiesree/git_github.git"
+    }
   stage('maven build'){
     def mvnHome = tool name: 'Apache Maven 3.3.9', type: 'maven'
     sh "${mvnHome}/bin/mvn package"
