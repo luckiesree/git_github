@@ -4,6 +4,11 @@ pipeline{
     PATH = /usr/bin:$PATH
   }
   stages{
+    stage('clone'){
+        steps{
+            git credentialsId:' luckiesree ', url: 'https://github.com/luckiesree/git_github.git'
+        }
+      }
       stage('build'){
         steps{
           echo "building an appliaction"
