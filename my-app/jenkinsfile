@@ -1,0 +1,23 @@
+pipeline{
+  agent any
+  stages{
+      stage('build'){
+        steps{
+          echo "building an appliaction"
+          mvn clean
+        }
+      }
+      stage('test'){
+        steps{
+          echo "testing an appliaction"
+          mvn test
+        }
+      }
+      stage('deploy'){
+        steps{
+          echo "deploying an appliaction"
+          mvn deploy
+        }
+      } 
+    }
+}
