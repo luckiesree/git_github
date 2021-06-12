@@ -1,23 +1,13 @@
 pipeline{
   agent any
+  environment{
+  PATH = /usr/bin:$PATH
   stages{
       stage('build'){
         steps{
           echo "building an appliaction"
-          mvn clean
+          sh "mvn clean install"
         }
       }
-      stage('test'){
-        steps{
-          echo "testing an appliaction"
-          mvn test
-        }
-      }
-      stage('deploy'){
-        steps{
-          echo "deploying an appliaction"
-          mvn deploy
-        }
-      } 
     }
 }
