@@ -1,6 +1,6 @@
 node {
   stage('SCM checkout'){
-    git "https://github.com/luckiesree/git_github/blob/dev/my-app"
+    git "https://github.com/luckiesree/git_github/my-app"
     }
   stage('compile-package'){
     sh 'mvn package'
